@@ -1,0 +1,43 @@
+{
+  "name": "regular-template2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":
+      "supervisor -i ./webApp/,./mock/,./codeOnline -p 1000 build/dev-server.js",
+    "build":
+      "rm -rf ./dist & webpack --mode production --display-error-details --color --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JRTemplates/regular-template2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JRTemplates/regular-template2/issues"
+  },
+  "homepage": "https://github.com/JRTemplates/regular-template2#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "global": "^4.3.2",
+    "html-webpack-plugin": "webpack-contrib/html-webpack-plugin",
+    "koajs": "^1.0.0",
+    "node-sass": "^4.7.2",
+    "open": "^0.0.5",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.2.0",
+    "webpack-dev-middleware": "^3.0.1",
+    "webpack-hot-middleware": "^2.21.2"
+  }
+}
